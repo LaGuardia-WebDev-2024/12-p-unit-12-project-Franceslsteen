@@ -21,17 +21,17 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Quiz About Me</h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">The Shawshank Redemption</option>
+          <option value="movie2">Manchester by the Sea</option>
+          <option value="movie3">Interstellar</option>
+          <option value="movie4">La La Land</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
@@ -45,10 +45,10 @@ Select ONE Additional Feature to Add
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">The Great Gatsby</option>
+          <option value="book2">Harry Potter</option>
+          <option value="book3">The Secret History</option>
+          <option value="book4">Gone Girl</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -58,7 +58,7 @@ Select ONE Additional Feature to Add
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      
+
       //========================Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
@@ -66,8 +66,8 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-text").text("YESSSS!");
+        if (answer === "movie2") {
+          $("#movie-text").text("YESSSS! Manchester by the Sea is correct!");
         } 
         else {
           $("#movie-text").text("Try Again!");
@@ -81,14 +81,14 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+        if (answer === "book3") {
+          $("#book-text").text("YESSSS! The Secret History is correct!");
         } 
         else {
           $("#book-text").text("Try Again!");
         }
       });
-      
+
     </script>
   </body>
 
